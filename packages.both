@@ -72,6 +72,7 @@ xterm
 linux-headers
 virtualbox-guest-utils
 gnome
+numlockx
 gnome-tweak-tool
 networkmanager
 network-manager-applet

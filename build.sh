@@ -104,6 +104,7 @@ make_customize_airootfs() {
     mkdir -p ${work_dir}/${arch}/airootfs/usr/share/themes/
     cp -r ${script_path}/Numix/icons/ ${work_dir}/${arch}/airootfs/usr/share/
     cp -r ${script_path}/Numix/themes/ ${work_dir}/${arch}/airootfs/usr/share/
+    cp ${script_path}/Digitalix-bg.png ${work_dir}/${arch}/airootfs/usr/share/backgrounds/
 	
     mkdir -p ${work_dir}/${arch}/airootfs/var/run/dbus
     mount -o bind /var/run/dbus ${work_dir}/${arch}/airootfs/var/run/dbus

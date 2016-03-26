@@ -29,10 +29,3 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
 systemctl enable NetworkManager.service
-
-echo "#### Activating Numix theme and icons ####" 
-gsettings set org.gnome.desktop.interface clock-show-date true
-gsettings set org.gnome.desktop.interface font-name "Cantarell 11"
-gsettings set org.gnome.desktop.interface gtk-theme "Numix-Frost-Light"
-gsettings set org.gnome.desktop.interface icon-theme "Numix-Square"
-gsettings set org.gnome.shell.extensions.user-theme name "Numix-Frost-Light"
