@@ -105,12 +105,9 @@ make_customize_airootfs() {
     cp -r ${script_path}/Numix/icons/ ${work_dir}/${arch}/airootfs/usr/share/
     cp -r ${script_path}/Numix/themes/ ${work_dir}/${arch}/airootfs/usr/share/
     cp ${script_path}/Digitalix-bg.png ${work_dir}/${arch}/airootfs/usr/share/backgrounds/
-	
-    mkdir -p ${work_dir}/${arch}/airootfs/var/run/dbus
-    mount -o bind /var/run/dbus ${work_dir}/${arch}/airootfs/var/run/dbus
+
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${work_dir}/pacman.conf" -D "${install_dir}" -r '/root/customize_airootfs.sh' run
     rm ${work_dir}/${arch}/airootfs/root/customize_airootfs.sh
-    umount -lf ${work_dir}/${arch}/airootfs/var/run/dbus
 }
 
 # Prepare kernel/initramfs ${install_dir}/boot/

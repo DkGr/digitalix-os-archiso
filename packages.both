@@ -56,12 +56,11 @@ vpnc
 wget
 wireless_tools
 wpa_actiond
-wpa_supplicant
 wvdial
 xl2tpd
 zd1211-firmware
 
-base-devel
+wpa_supplicant
 net-tools
 xorg-server
 xorg-xinit
@@ -69,9 +68,10 @@ xorg-server-utils
 xorg-drivers
 xorg-twm
 xterm
-linux-headers
-virtualbox-guest-utils
+mesa
+mesa-vdpau
 gnome
+gdm
 numlockx
 gnome-tweak-tool
 networkmanager

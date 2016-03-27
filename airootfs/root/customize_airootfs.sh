@@ -2,11 +2,7 @@
 
 set -e -u
 
-haveged -w 1024
-pacman-key --init
-pacman-key --populate archlinux
-pkill haveged
-
+export LANG=fr_FR.UTF-8
 sed -i 's/#\(fr_FR\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
@@ -27,5 +23,6 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 systemctl enable pacman-init.service choose-mirror.service
-systemctl set-default multi-user.target
+systemctl set-default graphical.target
 systemctl enable NetworkManager.service
+systemctl enable gdm.service
