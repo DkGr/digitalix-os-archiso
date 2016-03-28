@@ -67,7 +67,6 @@ xorg-xinit
 xorg-server-utils
 xorg-drivers
 xorg-twm
-xterm
 mesa
 mesa-vdpau
 gnome
@@ -80,4 +79,5 @@ firefox
 geary
 pantheon-photos
 scratch-text-editor
-
+plank
+plank-config
