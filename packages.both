@@ -60,6 +60,7 @@ wvdial
 xl2tpd
 zd1211-firmware
 
+yaourt
 wpa_supplicant
 net-tools
 xorg-server
@@ -80,4 +81,3 @@ geary
 pantheon-photos
 scratch-text-editor
 plank
-plank-config
